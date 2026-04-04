@@ -103,18 +103,19 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-html, body, [class*="css"]  {
+html, body, [class*="css"] {
     font-family: 'Inter', sans-serif;
+    color: #F1F5F9 !important;
 }
 
 .stApp {
     background:
-        linear-gradient(rgba(8, 20, 40, 0.82), rgba(8, 20, 40, 0.82)),
+        linear-gradient(rgba(8, 20, 40, 0.88), rgba(8, 20, 40, 0.88)),
         url("https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1600&q=80");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #102033;
+    color: #F1F5F9 !important;
 }
 
 .main .block-container {
@@ -149,10 +150,10 @@ html, body, [class*="css"]  {
 }
 
 .metric-card {
-    background: rgba(255,255,255,0.80);
+    background: rgba(255,255,255,0.14);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255,255,255,0.30);
+    border: 1px solid rgba(255,255,255,0.18);
     border-radius: 20px;
     padding: 18px 20px;
     box-shadow: 0 10px 24px rgba(16, 32, 51, 0.08);
@@ -160,71 +161,71 @@ html, body, [class*="css"]  {
 }
 
 .metric-label {
-    color: #5b6b7d;
+    color: #CBD5E1;
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 8px;
 }
 
 .metric-value {
-    color: #102033;
+    color: #FFFFFF;
     font-size: 26px;
     font-weight: 800;
 }
 
 .metric-subvalue {
-    color: #4f7bb8;
+    color: #BFD7FF;
     font-size: 14px;
     margin-top: 8px;
     font-weight: 600;
 }
 
 .section-box {
-    background: rgba(255,255,255,0.78);
+    background: rgba(255,255,255,0.10);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 22px;
     padding: 22px 22px 18px 22px;
     box-shadow: 0 10px 24px rgba(16, 32, 51, 0.10);
-    border: 1px solid rgba(255,255,255,0.30);
+    border: 1px solid rgba(255,255,255,0.18);
     margin-top: 14px;
     margin-bottom: 16px;
 }
 
 .section-title {
-    color: #102033;
+    color: #FFFFFF;
     font-size: 22px;
     font-weight: 800;
     margin-bottom: 6px;
 }
 
 .section-subtitle {
-    color: #5b6b7d;
+    color: #D6E4F5;
     font-size: 14px;
     margin-bottom: 16px;
 }
 
 .info-panel {
-    background: linear-gradient(135deg, rgba(15, 118, 110, 0.10), rgba(23, 78, 166, 0.08));
-    border-left: 6px solid #174ea6;
+    background: linear-gradient(135deg, rgba(15, 118, 110, 0.18), rgba(23, 78, 166, 0.16));
+    border-left: 6px solid #60A5FA;
     border-radius: 18px;
     padding: 18px 20px;
-    color: #102033;
+    color: #E2E8F0;
     line-height: 1.8;
     font-size: 15px;
 }
 
 .guide-text {
     font-size: 12.5px;
-    color: #617487;
+    color: #D6E4F5;
     margin-top: -6px;
     margin-bottom: 12px;
     line-height: 1.5;
 }
 
 .pred-box {
-    background: linear-gradient(135deg, rgba(23, 78, 166, 0.12), rgba(15, 118, 110, 0.10));
-    border: 1px solid rgba(23, 78, 166, 0.15);
+    background: linear-gradient(135deg, rgba(23, 78, 166, 0.20), rgba(15, 118, 110, 0.18));
+    border: 1px solid rgba(96, 165, 250, 0.20);
     border-radius: 22px;
     padding: 28px;
     text-align: center;
@@ -232,14 +233,14 @@ html, body, [class*="css"]  {
 }
 
 .pred-title {
-    color: #4a6078;
+    color: #D6E4F5;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .pred-value {
-    color: #0f2e5f;
+    color: #FFFFFF;
     font-size: 56px;
     font-weight: 800;
     line-height: 1.1;
@@ -247,13 +248,13 @@ html, body, [class*="css"]  {
 }
 
 .pred-meta {
-    color: #55697c;
+    color: #E2E8F0;
     font-size: 15px;
     line-height: 1.7;
 }
 
 div[data-baseweb="input"] > div {
-    background-color: #ffffff !important;
+    background-color: rgba(255,255,255,0.96) !important;
     border: 1px solid #d6e0ea !important;
     border-radius: 14px !important;
     box-shadow: 0 4px 12px rgba(16, 32, 51, 0.04);
@@ -266,7 +267,7 @@ div[data-baseweb="input"] input {
 }
 
 label, .stNumberInput label {
-    color: #102033 !important;
+    color: #E2E8F0 !important;
     font-weight: 700 !important;
     font-size: 15px !important;
 }
@@ -290,20 +291,24 @@ label, .stNumberInput label {
 }
 
 [data-testid="stDataFrame"] {
-    background: rgba(255,255,255,0.82) !important;
+    background: rgba(255,255,255,0.10) !important;
     border-radius: 16px !important;
-    border: 1px solid rgba(16, 32, 51, 0.08) !important;
+    border: 1px solid rgba(255,255,255,0.18) !important;
     overflow: hidden !important;
 }
 
+[data-testid="stDataFrame"] * {
+    color: #F1F5F9 !important;
+}
+
 [data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #f7fbff 0%, #eef5fc 100%);
-    border-right: 1px solid #dbe6f0;
+    background: linear-gradient(180deg, rgba(14, 27, 52, 0.95) 0%, rgba(22, 44, 84, 0.92) 100%);
+    border-right: 1px solid rgba(255,255,255,0.08);
 }
 
 .sidebar-box {
-    background: rgba(255,255,255,0.92);
-    border: 1px solid rgba(16, 32, 51, 0.08);
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.14);
     border-radius: 18px;
     padding: 16px;
     margin-bottom: 14px;
@@ -311,7 +316,7 @@ label, .stNumberInput label {
 }
 
 .footer-note {
-    color: #627487;
+    color: #D6E4F5;
     font-size: 13px;
     text-align: center;
     margin-top: 10px;
@@ -565,6 +570,7 @@ if st.button("Predict Drug Release Amount (%)", use_container_width=True):
 
     st.markdown("")
     st.dataframe(pred_df, use_container_width=True, hide_index=True)
+
 st.markdown('</div>', unsafe_allow_html=True)
 
 # =========================================================
