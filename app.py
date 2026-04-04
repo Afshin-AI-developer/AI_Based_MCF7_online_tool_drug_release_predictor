@@ -328,7 +328,25 @@ label, .stNumberInput label {
 }
 </style>
 """, unsafe_allow_html=True)
+/* Download button fix */
+.stDownloadButton > button {
+    width: 100%;
+    border-radius: 16px;
+    padding: 15px 22px;
+    font-size: 18px;
+    font-weight: 800;
 
+    color: #FFFFFF !important;
+
+    background: linear-gradient(90deg, #174ea6, #0f766e);
+
+    border: none;
+    box-shadow: 0 12px 24px rgba(23, 78, 166, 0.20);
+}
+
+.stDownloadButton > button:hover {
+    background: linear-gradient(90deg, #1d4ed8, #047857);
+}
 # =========================================================
 # FUNCTIONS
 # =========================================================
