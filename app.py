@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Professional Streamlit app for predicting drug release amount (%)
-Designed for a more scientific, premium, publication-style interface.
+Designed for a scientific, premium, publication-style interface.
 """
 
 import os
@@ -302,17 +302,22 @@ label, .stNumberInput label {
 }
 
 [data-testid="stSidebar"] {
-    background: linear-gradient(180deg, rgba(14, 27, 52, 0.95) 0%, rgba(22, 44, 84, 0.92) 100%);
-    border-right: 1px solid rgba(255,255,255,0.08);
+    background: linear-gradient(180deg, #f7fbff 0%, #eef5fc 100%);
+    border-right: 1px solid #dbe6f0;
+}
+
+/* Sidebar text fix */
+[data-testid="stSidebar"] * {
+    color: #102033 !important;
 }
 
 .sidebar-box {
-    background: rgba(255,255,255,0.10);
-    border: 1px solid rgba(255,255,255,0.14);
+    background: rgba(255,255,255,0.95);
+    border: 1px solid rgba(16, 32, 51, 0.10);
     border-radius: 18px;
     padding: 16px;
     margin-bottom: 14px;
-    box-shadow: 0 8px 20px rgba(16, 32, 51, 0.05);
+    box-shadow: 0 8px 20px rgba(16, 32, 51, 0.06);
 }
 
 .footer-note {
