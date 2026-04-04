@@ -272,22 +272,24 @@ label, .stNumberInput label {
     font-size: 15px !important;
 }
 
-.stButton > button {
+/* Download button fix */
+.stDownloadButton > button {
     width: 100%;
     border-radius: 16px;
     padding: 15px 22px;
     font-size: 18px;
     font-weight: 800;
-    color: white !important;
+
+    color: #FFFFFF !important;
+
     background: linear-gradient(90deg, #174ea6, #0f766e);
+
     border: none;
     box-shadow: 0 12px 24px rgba(23, 78, 166, 0.20);
-    transition: all 0.2s ease-in-out;
 }
 
-.stButton > button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 16px 28px rgba(23, 78, 166, 0.24);
+.stDownloadButton > button:hover {
+    background: linear-gradient(90deg, #1d4ed8, #047857);
 }
 
 [data-testid="stDataFrame"] {
@@ -328,25 +330,6 @@ label, .stNumberInput label {
 }
 </style>
 """, unsafe_allow_html=True)
-/* Download button fix */
-.stDownloadButton > button {
-    width: 100%;
-    border-radius: 16px;
-    padding: 15px 22px;
-    font-size: 18px;
-    font-weight: 800;
-
-    color: #FFFFFF !important;
-
-    background: linear-gradient(90deg, #174ea6, #0f766e);
-
-    border: none;
-    box-shadow: 0 12px 24px rgba(23, 78, 166, 0.20);
-}
-
-.stDownloadButton > button:hover {
-    background: linear-gradient(90deg, #1d4ed8, #047857);
-}
 # =========================================================
 # FUNCTIONS
 # =========================================================
