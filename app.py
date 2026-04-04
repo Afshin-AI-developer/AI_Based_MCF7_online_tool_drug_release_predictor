@@ -109,9 +109,11 @@ html, body, [class*="css"]  {
 
 .stApp {
     background:
-        radial-gradient(circle at top left, rgba(23, 78, 166, 0.10), transparent 30%),
-        radial-gradient(circle at bottom right, rgba(0, 128, 128, 0.10), transparent 30%),
-        linear-gradient(135deg, #f6f9fc 0%, #eef4fb 50%, #f9fbfd 100%);
+        linear-gradient(rgba(8, 20, 40, 0.82), rgba(8, 20, 40, 0.82)),
+        url("https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #102033;
 }
 
@@ -147,11 +149,13 @@ html, body, [class*="css"]  {
 }
 
 .metric-card {
-    background: rgba(255,255,255,0.88);
-    border: 1px solid rgba(16, 32, 51, 0.08);
+    background: rgba(255,255,255,0.80);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.30);
     border-radius: 20px;
     padding: 18px 20px;
-    box-shadow: 0 10px 24px rgba(16, 32, 51, 0.06);
+    box-shadow: 0 10px 24px rgba(16, 32, 51, 0.08);
     min-height: 120px;
 }
 
@@ -176,11 +180,13 @@ html, body, [class*="css"]  {
 }
 
 .section-box {
-    background: rgba(255,255,255,0.88);
+    background: rgba(255,255,255,0.78);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 22px;
     padding: 22px 22px 18px 22px;
-    box-shadow: 0 10px 24px rgba(16, 32, 51, 0.06);
-    border: 1px solid rgba(16, 32, 51, 0.08);
+    box-shadow: 0 10px 24px rgba(16, 32, 51, 0.10);
+    border: 1px solid rgba(255,255,255,0.30);
     margin-top: 14px;
     margin-bottom: 16px;
 }
